@@ -56,22 +56,11 @@ public class Cafe extends Building{
         System.out.println("Available options at " + this.name + ":\n + enter() \n + exit() \n + sellCoffee(size, nSugarPackets, nCreams)\n");
     }
 
-    /*Method. Sets floor number to number specified. Mimicks elevator.
+    /*Method. Doesn't allow movement to other floors
      * @param floorNum
      */
     public void goToFloor(int floorNum) {
-        if (elevator = true) {
-            if (this.activeFloor == -1) {
-                throw new RuntimeException("You are not inside this Building. Must call enter() before navigating between floors.");
-            }
-            if (floorNum < 1 || floorNum > this.nFloors) {
-                throw new RuntimeException("Invalid floor number. Valid range for this Building is 1-" + this.nFloors +".");
-            }
-            System.out.println("You are now on floor #" + floorNum + " of " + this.name);
-            this.activeFloor = floorNum;
-        } else {
-            System.out.println("There is no elevator in this building. Try something else");
-        }
+         System.out.println("There is no elevator in this building and you aren't allowed to move off this floor. Try something else");
     }
 
     /* Method sells coffee according to size, sugar, and cream requests. If out of some ingredient, restock.

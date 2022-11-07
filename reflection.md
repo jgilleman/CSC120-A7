@@ -8,7 +8,7 @@ I decided to overload the constructors because I didn't feel there was any reaso
         If you don't enter floor status, set to 1.
     Cafe: 
         If elevator status not mentioned, elevator=false. If floor number not specified, nFloors=1
-        If elevator status not mentioned, elevator=false
+        If elevator status not mentioned, elevator=false.
     House:
         If nFloors wasn't specified then set nFloors to 1
         If hasDR wasn't specified then set hasDR to true.
